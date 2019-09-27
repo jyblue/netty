@@ -420,7 +420,7 @@ public final class SslContextBuilder {
     /**
      * The TLS protocol versions to enable.
      * @param protocols The protocols to enable, or {@code null} to enable the default protocols.
-     * @see SSLEngine#setEnabledCipherSuites(String[])
+     * @see SSLEngine#setEnabledProtocols(String[])
      */
     public SslContextBuilder protocols(String... protocols) {
         this.protocols = protocols == null ? null : protocols.clone();
